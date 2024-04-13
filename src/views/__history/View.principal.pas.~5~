@@ -18,12 +18,6 @@ type
     topPanel: TPanel;
     closeButton: TButton;
     menuPanel: TPanel;
-    backgroundPanel: TPanel;
-    footerPanel: TPanel;
-    contentPanel: TPanel;
-    logoPanel: TPanel;
-    lineLogoPanel: TPanel;
-    Panel1: TPanel;
     procedure closeButtonClick(Sender: TObject);
   private
     { Private declarations }

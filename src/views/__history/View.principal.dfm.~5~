@@ -2132,17 +2132,20 @@ object ViewPrincipal: TViewPrincipal
     Left = 0
     Top = 0
     Width = 958
-    Height = 60
+    Height = 41
     Align = alTop
     BevelOuter = bvNone
-    Color = 1495548
+    Color = 511465
     ParentBackground = False
     TabOrder = 0
+    ExplicitLeft = 416
+    ExplicitTop = 280
+    ExplicitWidth = 185
     object closeButton: TButton
       Left = 883
       Top = 0
       Width = 75
-      Height = 60
+      Height = 41
       Align = alRight
       Caption = 'Close'
       TabOrder = 0
@@ -2150,94 +2153,6 @@ object ViewPrincipal: TViewPrincipal
       ExplicitLeft = 760
       ExplicitTop = 24
       ExplicitHeight = 25
-    end
-    object logoPanel: TPanel
-      Left = 0
-      Top = 0
-      Width = 210
-      Height = 60
-      Align = alLeft
-      BevelOuter = bvNone
-      TabOrder = 1
-      ExplicitLeft = -6
-      ExplicitTop = -6
-      object lineLogoPanel: TPanel
-        Left = 0
-        Top = 0
-        Width = 210
-        Height = 2
-        Align = alTop
-        BevelOuter = bvNone
-        Color = 52428
-        ParentBackground = False
-        TabOrder = 0
-      end
-      object Panel1: TPanel
-        Left = 0
-        Top = 2
-        Width = 210
-        Height = 58
-        Align = alClient
-        BevelOuter = bvNone
-        TabOrder = 1
-        ExplicitLeft = 80
-        ExplicitTop = 24
-        ExplicitWidth = 185
-        ExplicitHeight = 41
-      end
-    end
-  end
-  object menuPanel: TPanel
-    Left = 0
-    Top = 60
-    Width = 210
-    Height = 635
-    Align = alLeft
-    BevelOuter = bvNone
-    Color = 2506211
-    ParentBackground = False
-    TabOrder = 1
-    ExplicitTop = 41
-    ExplicitHeight = 654
-  end
-  object backgroundPanel: TPanel
-    Left = 210
-    Top = 60
-    Width = 748
-    Height = 635
-    Align = alClient
-    BevelOuter = bvNone
-    TabOrder = 2
-    ExplicitLeft = 616
-    ExplicitTop = 368
-    ExplicitWidth = 185
-    ExplicitHeight = 41
-    object footerPanel: TPanel
-      Left = 0
-      Top = 594
-      Width = 748
-      Height = 41
-      Align = alBottom
-      BevelOuter = bvNone
-      Color = 1495548
-      ParentBackground = False
-      TabOrder = 0
-      ExplicitLeft = 424
-      ExplicitTop = 392
-      ExplicitWidth = 185
-    end
-    object contentPanel: TPanel
-      Left = 0
-      Top = 0
-      Width = 748
-      Height = 594
-      Align = alClient
-      BevelOuter = bvNone
-      TabOrder = 1
-      ExplicitLeft = 216
-      ExplicitTop = 248
-      ExplicitWidth = 185
-      ExplicitHeight = 41
     end
   end
 end
