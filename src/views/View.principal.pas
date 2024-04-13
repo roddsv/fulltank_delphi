@@ -3,11 +3,21 @@ unit View.principal;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
+  Winapi.Windows,
+  Winapi.Messages,
+  System.SysUtils,
+  System.Variants,
+  System.Classes,
+  Vcl.Graphics,
+  Vcl.Controls,
+  Vcl.Forms,
+  Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
 
 type
-  TForm1 = class(TForm)
+  TViewPrincipal = class(TForm)
+    topPanel: TPanel;
+    closeButton: TButton;
+    procedure closeButtonClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -15,10 +25,15 @@ type
   end;
 
 var
-  Form1: TForm1;
+  ViewPrincipal: TViewPrincipal;
 
 implementation
 
 {$R *.dfm}
+
+procedure TViewPrincipal.closeButtonClick(Sender: TObject);
+begin
+  Application.Terminate;
+end;
 
 end.
