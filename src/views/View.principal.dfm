@@ -2138,6 +2138,7 @@ object ViewPrincipal: TViewPrincipal
     Color = 1495548
     ParentBackground = False
     TabOrder = 0
+    ExplicitTop = -6
     object closeButton: TButton
       Left = 883
       Top = 0
@@ -2303,7 +2304,7 @@ object ViewPrincipal: TViewPrincipal
           Stretch = True
           ExplicitTop = -6
         end
-        object Label1: TLabel
+        object projectName: TLabel
           Left = 41
           Top = 0
           Width = 169
@@ -2318,8 +2319,8 @@ object ViewPrincipal: TViewPrincipal
           Font.Style = [fsBold]
           ParentFont = False
           Layout = tlCenter
-          ExplicitWidth = 144
-          ExplicitHeight = 44
+          ExplicitLeft = 35
+          ExplicitTop = -6
         end
       end
     end
@@ -2329,15 +2330,16 @@ object ViewPrincipal: TViewPrincipal
       Width = 673
       Height = 60
       Align = alClient
+      BevelOuter = bvNone
       TabOrder = 2
-      ExplicitLeft = 204
-      ExplicitTop = -6
+      ExplicitLeft = 336
+      ExplicitWidth = 547
       object projectDescription: TLabel
-        Left = 1
-        Top = 1
-        Width = 336
-        Height = 58
-        Align = alLeft
+        Left = 0
+        Top = 0
+        Width = 673
+        Height = 60
+        Align = alClient
         Alignment = taCenter
         Caption = 'SISTEMA DE GERENCIAMENTO DOS ABASTECIMENTOS DO POSTO ABC'
         Font.Charset = ANSI_CHARSET
@@ -2347,29 +2349,8 @@ object ViewPrincipal: TViewPrincipal
         Font.Style = [fsBold]
         ParentFont = False
         Layout = tlCenter
-        WordWrap = True
-        ExplicitLeft = 6
-        ExplicitTop = -4
-      end
-      object technologiesDescription: TLabel
-        Left = 337
-        Top = 1
-        Width = 335
-        Height = 58
-        Align = alClient
-        Alignment = taCenter
-        Caption = 'DESENVOLVIDO EM DELPHI E FIREBIRD 2.5'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -17
-        Font.Name = 'Roboto'
-        Font.Style = [fsBold]
-        ParentFont = False
-        Layout = tlCenter
-        WordWrap = True
-        ExplicitLeft = 549
-        ExplicitWidth = 123
-        ExplicitHeight = 60
+        ExplicitTop = -6
+        ExplicitWidth = 500
       end
     end
   end
@@ -2383,8 +2364,8 @@ object ViewPrincipal: TViewPrincipal
     Color = 2506211
     ParentBackground = False
     TabOrder = 1
-    ExplicitLeft = -5
-    ExplicitTop = 65
+    ExplicitLeft = -6
+    ExplicitTop = 66
   end
   object backgroundPanel: TPanel
     Left = 210
@@ -2404,6 +2385,26 @@ object ViewPrincipal: TViewPrincipal
       Color = 1495548
       ParentBackground = False
       TabOrder = 0
+      object footerLicenseText: TLabel
+        Left = 0
+        Top = 0
+        Width = 748
+        Height = 41
+        Align = alClient
+        Alignment = taCenter
+        Caption = 
+          'DESENVOLVIDO EM DELPHI E FIREBIRD POR RODRIGO SOARES. TODOS OS D' +
+          'IREITOS RESERVADOS.'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+        Layout = tlCenter
+        ExplicitWidth = 662
+        ExplicitHeight = 20
+      end
     end
     object contentPanel: TPanel
       Left = 0

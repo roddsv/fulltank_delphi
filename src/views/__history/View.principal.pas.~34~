@@ -27,8 +27,6 @@ type
     Logo: TImage;
     Label1: TLabel;
     descriptionPanel: TPanel;
-    projectDescription: TLabel;
-    Label3: TLabel;
     procedure closeButtonClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
   private
@@ -49,9 +47,4 @@ begin
   Application.Terminate;
 end;
 
-procedure TViewPrincipal.FormShow(Sender: TObject);
-begin
-  ShowMessage('Evento OnShow foi chamado!');
-  projectDescription.Caption := 'Sistema de Gerenciamento de Abastecimento' + #13#10 + ' do Posto ABC';
-end;
 end.

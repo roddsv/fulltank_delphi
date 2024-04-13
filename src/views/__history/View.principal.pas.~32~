@@ -27,9 +27,9 @@ type
     Logo: TImage;
     Label1: TLabel;
     descriptionPanel: TPanel;
-    projectDescription: TLabel;
-    Label3: TLabel;
+    Label2: TLabel;
     procedure closeButtonClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -47,4 +47,4 @@ procedure TViewPrincipal.closeButtonClick(Sender: TObject);
 begin
   Application.Terminate;
 end;
-end.
+

@@ -2323,6 +2323,55 @@ object ViewPrincipal: TViewPrincipal
         end
       end
     end
+    object descriptionPanel: TPanel
+      Left = 210
+      Top = 0
+      Width = 673
+      Height = 60
+      Align = alClient
+      TabOrder = 2
+      ExplicitLeft = 204
+      ExplicitTop = -6
+      object projectDescription: TLabel
+        Left = 1
+        Top = 1
+        Width = 336
+        Height = 58
+        Align = alLeft
+        Alignment = taCenter
+        Caption = 'SISTEMA DE GERENCIAMENTO DOS ABASTECIMENTOS DO POSTO ABC'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -17
+        Font.Name = 'Roboto'
+        Font.Style = [fsBold]
+        ParentFont = False
+        Layout = tlCenter
+        WordWrap = True
+        ExplicitLeft = 6
+        ExplicitTop = -4
+      end
+      object technologiesDescription: TLabel
+        Left = 337
+        Top = 1
+        Width = 335
+        Height = 58
+        Align = alClient
+        Alignment = taCenter
+        Caption = 'DESENVOLVIDO EM DELPHI E FIREBIRD 2.5'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -17
+        Font.Name = 'Roboto'
+        Font.Style = [fsBold]
+        ParentFont = False
+        Layout = tlCenter
+        WordWrap = True
+        ExplicitLeft = 549
+        ExplicitWidth = 123
+        ExplicitHeight = 60
+      end
+    end
   end
   object menuPanel: TPanel
     Left = 0
@@ -2334,8 +2383,8 @@ object ViewPrincipal: TViewPrincipal
     Color = 2506211
     ParentBackground = False
     TabOrder = 1
-    ExplicitLeft = -6
-    ExplicitTop = 63
+    ExplicitLeft = -5
+    ExplicitTop = 65
   end
   object backgroundPanel: TPanel
     Left = 210
@@ -2370,6 +2419,8 @@ object ViewPrincipal: TViewPrincipal
       Font.Style = []
       ParentFont = False
       TabOrder = 1
+      ExplicitLeft = 6
+      ExplicitTop = -6
     end
   end
 end

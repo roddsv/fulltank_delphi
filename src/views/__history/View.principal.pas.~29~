@@ -27,10 +27,8 @@ type
     Logo: TImage;
     Label1: TLabel;
     descriptionPanel: TPanel;
-    projectDescription: TLabel;
     Label2: TLabel;
     procedure closeButtonClick(Sender: TObject);
-    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -48,9 +46,3 @@ procedure TViewPrincipal.closeButtonClick(Sender: TObject);
 begin
   Application.Terminate;
 end;
-
-procedure TViewPrincipal.FormShow(Sender: TObject);
-begin
-  projectDescription.Caption := 'Sistema de Gerenciamento de Abastecimento' + #13#10 + ' do Posto ABC';
-end;
-end.
