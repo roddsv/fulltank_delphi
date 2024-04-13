@@ -3195,7 +3195,7 @@ object ViewPrincipal: TViewPrincipal
       Font.Style = [fsBold]
       ParentFont = False
       TabOrder = 1
-      object Image1: TImage
+      object contentImage: TImage
         Left = 0
         Top = 0
         Width = 748

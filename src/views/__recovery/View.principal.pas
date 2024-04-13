@@ -37,7 +37,7 @@ type
     btnBombasETanques: TSpeedButton;
     btnConfiguracoes: TSpeedButton;
     userLicenseText: TLabel;
-    Image1: TImage;
+    contentImage: TImage;
     procedure closeButtonClick(Sender: TObject);
     procedure btnAbastecimentosClick(Sender : TObject);
     procedure btnBombasETanquesClick(Sender : TObject);
