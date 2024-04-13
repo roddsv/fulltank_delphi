@@ -11,7 +11,8 @@ uses
   Vcl.Graphics,
   Vcl.Controls,
   Vcl.Forms,
-  Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Imaging.pngimage, Vcl.Buttons;
+  Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Imaging.pngimage, Vcl.Buttons,
+  System.Actions, Vcl.ActnList, System.ImageList, Vcl.ImgList;
 
 type
   TViewPrincipal = class(TForm)
@@ -35,12 +36,22 @@ type
     btnRelatorios: TSpeedButton;
     btnBombasETanques: TSpeedButton;
     btnConfiguracoes: TSpeedButton;
+    userLicenseText: TLabel;
+    Image1: TImage;
+    ActionList_main: TActionList;
+    act_abastecimentos: TAction;
+    act_bombas_e_tanques: TAction;
+    act_relatorios: TAction;
+    act_configuracoes: TAction;
+    ImageList_36: TImageList;
     procedure closeButtonClick(Sender: TObject);
     procedure btnAbastecimentosClick(Sender : TObject);
     procedure btnBombasETanquesClick(Sender : TObject);
     procedure btnRelatoriosClick(Sender : TObject);
     procedure btnConfiguracoesClick(Sender : TObject);
     procedure FormShow(Sender: TObject);
+    procedure projectNameMouseEnter(Sender: TObject);
+    procedure projectNameMouseLeave(Sender: TObject);
   private
     procedure GetLineMenu(Sender: TObject);
   public
@@ -92,6 +103,16 @@ begin
   ShapeMenu.Top := TSpeedButton(Sender).Top;
   menuShapePanel.Repaint;
 
+end;
+
+procedure TViewPrincipal.projectNameMouseEnter(Sender: TObject);
+begin
+  projectName.Font.Color := clGray;
+end;
+
+procedure TViewPrincipal.projectNameMouseLeave(Sender: TObject);
+begin
+  projectName.Font.Color := clBlack;
 end;
 
 end.
