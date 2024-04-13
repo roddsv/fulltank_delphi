@@ -11,7 +11,7 @@ uses
   Vcl.Graphics,
   Vcl.Controls,
   Vcl.Forms,
-  Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+  Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Imaging.pngimage;
 
 type
   TViewPrincipal = class(TForm)
@@ -23,8 +23,14 @@ type
     contentPanel: TPanel;
     logoPanel: TPanel;
     lineLogoPanel: TPanel;
-    Panel1: TPanel;
+    contentLogoPanel: TPanel;
+    Logo: TImage;
+    Label1: TLabel;
+    descriptionPanel: TPanel;
+    projectDescription: TLabel;
+    technologiesDescription: TLabel;
     procedure closeButtonClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -43,4 +49,8 @@ begin
   Application.Terminate;
 end;
 
+procedure TViewPrincipal.FormShow(Sender: TObject);
+begin
+  projectDescription.Caption := 'Sistema de Gerenciamento de Abastecimento' + #13#10 + ' do Posto ABC';
+end;
 end.
