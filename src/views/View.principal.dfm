@@ -2127,6 +2127,7 @@ object ViewPrincipal: TViewPrincipal
     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+  OnShow = FormShow
   TextHeight = 15
   object topPanel: TPanel
     Left = 0
@@ -2138,7 +2139,6 @@ object ViewPrincipal: TViewPrincipal
     Color = 1495548
     ParentBackground = False
     TabOrder = 0
-    ExplicitTop = -6
     object closeButton: TButton
       Left = 883
       Top = 0
@@ -2176,8 +2176,6 @@ object ViewPrincipal: TViewPrincipal
         Align = alRight
         BevelOuter = bvNone
         TabOrder = 1
-        ExplicitLeft = -6
-        ExplicitTop = -4
         object Logo: TImage
           Left = 0
           Top = 0
@@ -2319,8 +2317,8 @@ object ViewPrincipal: TViewPrincipal
           Font.Style = [fsBold]
           ParentFont = False
           Layout = tlCenter
-          ExplicitLeft = 35
-          ExplicitTop = -6
+          ExplicitWidth = 144
+          ExplicitHeight = 44
         end
       end
     end
@@ -2332,8 +2330,6 @@ object ViewPrincipal: TViewPrincipal
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 2
-      ExplicitLeft = 336
-      ExplicitWidth = 547
       object projectDescription: TLabel
         Left = 0
         Top = 0
@@ -2349,8 +2345,8 @@ object ViewPrincipal: TViewPrincipal
         Font.Style = [fsBold]
         ParentFont = False
         Layout = tlCenter
-        ExplicitTop = -6
-        ExplicitWidth = 500
+        ExplicitWidth = 551
+        ExplicitHeight = 20
       end
     end
   end
@@ -2364,8 +2360,6 @@ object ViewPrincipal: TViewPrincipal
     Color = 2506211
     ParentBackground = False
     TabOrder = 1
-    ExplicitLeft = -6
-    ExplicitTop = 66
     object menuShapePanel: TPanel
       Left = 0
       Top = 0
@@ -2389,16 +2383,13 @@ object ViewPrincipal: TViewPrincipal
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitLeft = 16
-      ExplicitTop = 296
-      ExplicitWidth = 185
-      ExplicitHeight = 41
       object btnAbastecimentos: TSpeedButton
         AlignWithMargins = True
         Left = 3
         Top = 25
         Width = 200
         Height = 50
+        Cursor = crHandPoint
         Margins.Top = 25
         Align = alTop
         Caption = 'ABASTECIMENTOS'
@@ -2409,6 +2400,7 @@ object ViewPrincipal: TViewPrincipal
         Font.Name = 'Roboto'
         Font.Style = [fsBold]
         ParentFont = False
+        OnClick = btnAbastecimentosClick
         ExplicitLeft = 0
         ExplicitTop = 28
       end
@@ -2418,6 +2410,7 @@ object ViewPrincipal: TViewPrincipal
         Top = 181
         Width = 200
         Height = 50
+        Cursor = crHandPoint
         Margins.Top = 25
         Align = alTop
         Caption = 'RELAT'#211'RIOS'
@@ -2428,6 +2421,7 @@ object ViewPrincipal: TViewPrincipal
         Font.Name = 'Roboto'
         Font.Style = [fsBold]
         ParentFont = False
+        OnClick = btnRelatoriosClick
         ExplicitLeft = 0
         ExplicitTop = 28
       end
@@ -2437,6 +2431,7 @@ object ViewPrincipal: TViewPrincipal
         Top = 103
         Width = 200
         Height = 50
+        Cursor = crHandPoint
         Margins.Top = 25
         Align = alTop
         Caption = 'BOMBAS E TANQUES'
@@ -2447,6 +2442,7 @@ object ViewPrincipal: TViewPrincipal
         Font.Name = 'Roboto'
         Font.Style = [fsBold]
         ParentFont = False
+        OnClick = btnBombasETanquesClick
         ExplicitLeft = 0
         ExplicitTop = 28
       end
@@ -2456,6 +2452,7 @@ object ViewPrincipal: TViewPrincipal
         Top = 259
         Width = 200
         Height = 50
+        Cursor = crHandPoint
         Margins.Top = 25
         Align = alTop
         Caption = 'CONFIGURA'#199#213'ES'
@@ -2466,6 +2463,7 @@ object ViewPrincipal: TViewPrincipal
         Font.Name = 'Roboto'
         Font.Style = [fsBold]
         ParentFont = False
+        OnClick = btnConfiguracoesClick
         ExplicitLeft = 6
         ExplicitTop = 435
       end
@@ -2525,8 +2523,6 @@ object ViewPrincipal: TViewPrincipal
       Font.Style = [fsBold]
       ParentFont = False
       TabOrder = 1
-      ExplicitLeft = 3
-      ExplicitTop = -6
     end
   end
 end
