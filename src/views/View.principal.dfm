@@ -2366,6 +2366,110 @@ object ViewPrincipal: TViewPrincipal
     TabOrder = 1
     ExplicitLeft = -6
     ExplicitTop = 66
+    object menuShapePanel: TPanel
+      Left = 0
+      Top = 0
+      Width = 4
+      Height = 635
+      Align = alLeft
+      BevelOuter = bvNone
+      TabOrder = 0
+      object ShapeMenu: TShape
+        Left = 0
+        Top = 0
+        Width = 4
+        Height = 50
+      end
+    end
+    object menuDataPanel: TPanel
+      Left = 4
+      Top = 0
+      Width = 206
+      Height = 635
+      Align = alClient
+      BevelOuter = bvNone
+      TabOrder = 1
+      ExplicitLeft = 16
+      ExplicitTop = 296
+      ExplicitWidth = 185
+      ExplicitHeight = 41
+      object btnAbastecimentos: TSpeedButton
+        AlignWithMargins = True
+        Left = 3
+        Top = 25
+        Width = 200
+        Height = 50
+        Margins.Top = 25
+        Align = alTop
+        Caption = 'ABASTECIMENTOS'
+        Flat = True
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -17
+        Font.Name = 'Roboto'
+        Font.Style = [fsBold]
+        ParentFont = False
+        ExplicitLeft = 0
+        ExplicitTop = 28
+      end
+      object btnRelatorios: TSpeedButton
+        AlignWithMargins = True
+        Left = 3
+        Top = 181
+        Width = 200
+        Height = 50
+        Margins.Top = 25
+        Align = alTop
+        Caption = 'RELAT'#211'RIOS'
+        Flat = True
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -17
+        Font.Name = 'Roboto'
+        Font.Style = [fsBold]
+        ParentFont = False
+        ExplicitLeft = 0
+        ExplicitTop = 28
+      end
+      object btnBombasETanques: TSpeedButton
+        AlignWithMargins = True
+        Left = 3
+        Top = 103
+        Width = 200
+        Height = 50
+        Margins.Top = 25
+        Align = alTop
+        Caption = 'BOMBAS E TANQUES'
+        Flat = True
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -17
+        Font.Name = 'Roboto'
+        Font.Style = [fsBold]
+        ParentFont = False
+        ExplicitLeft = 0
+        ExplicitTop = 28
+      end
+      object btnConfiguracoes: TSpeedButton
+        AlignWithMargins = True
+        Left = 3
+        Top = 259
+        Width = 200
+        Height = 50
+        Margins.Top = 25
+        Align = alTop
+        Caption = 'CONFIGURA'#199#213'ES'
+        Flat = True
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -17
+        Font.Name = 'Roboto'
+        Font.Style = [fsBold]
+        ParentFont = False
+        ExplicitLeft = 6
+        ExplicitTop = 435
+      end
+    end
   end
   object backgroundPanel: TPanel
     Left = 210
@@ -2411,16 +2515,17 @@ object ViewPrincipal: TViewPrincipal
       Top = 0
       Width = 748
       Height = 594
+      Margins.Top = 25
       Align = alClient
       BevelOuter = bvNone
-      Font.Charset = DEFAULT_CHARSET
+      Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
       Font.Height = -30
-      Font.Name = 'Segoe UI'
-      Font.Style = []
+      Font.Name = 'Roboto Cn'
+      Font.Style = [fsBold]
       ParentFont = False
       TabOrder = 1
-      ExplicitLeft = 6
+      ExplicitLeft = 3
       ExplicitTop = -6
     end
   end

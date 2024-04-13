@@ -11,7 +11,7 @@ uses
   Vcl.Graphics,
   Vcl.Controls,
   Vcl.Forms,
-  Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Imaging.pngimage;
+  Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Imaging.pngimage, Vcl.Buttons;
 
 type
   TViewPrincipal = class(TForm)
@@ -28,6 +28,13 @@ type
     projectName: TLabel;
     descriptionPanel: TPanel;
     footerLicenseText: TLabel;
+    menuShapePanel: TPanel;
+    ShapeMenu: TShape;
+    menuDataPanel: TPanel;
+    btnAbastecimentos: TSpeedButton;
+    btnRelatorios: TSpeedButton;
+    btnBombasETanques: TSpeedButton;
+    btnConfiguracoes: TSpeedButton;
     procedure closeButtonClick(Sender: TObject);
   private
     { Private declarations }

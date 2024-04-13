@@ -25,9 +25,9 @@ type
     lineLogoPanel: TPanel;
     contentLogoPanel: TPanel;
     Logo: TImage;
-    Label1: TLabel;
+    projectName: TLabel;
     descriptionPanel: TPanel;
-    Label2: TLabel;
+    footerLicenseText: TLabel;
     procedure closeButtonClick(Sender: TObject);
   private
     { Private declarations }
@@ -46,3 +46,5 @@ procedure TViewPrincipal.closeButtonClick(Sender: TObject);
 begin
   Application.Terminate;
 end;
+
+end.
