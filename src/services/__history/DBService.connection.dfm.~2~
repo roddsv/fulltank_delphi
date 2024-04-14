@@ -1,0 +1,9 @@
+object ServiceDBConn: TServiceDBConn
+  Height = 750
+  Width = 1000
+  PixelsPerInch = 120
+  object FirebaseFDConn: TFDConnection
+    Left = 320
+    Top = 192
+  end
+end
