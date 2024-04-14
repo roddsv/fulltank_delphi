@@ -11,6 +11,19 @@ uses
 type
   TDBServiceConsultas = class(TDataModule)
     QRY_abastecimentos: TFDQuery;
+    QRY_bombas: TFDQuery;
+    QRY_abastecimentosABASTECIMENTO_ID: TIntegerField;
+    QRY_abastecimentosBOMBA_ID: TIntegerField;
+    QRY_abastecimentosDATA_ABASTECIMENTO: TDateField;
+    QRY_abastecimentosQUANTIDADE_LITROS: TFMTBCDField;
+    QRY_abastecimentosVALOR_ABASTECIDO: TFMTBCDField;
+    QRY_abastecimentosIMPOSTO: TFMTBCDField;
+    QRY_bombasBOMBA_ID: TIntegerField;
+    QRY_bombasNUMERO_BOMBA: TIntegerField;
+    QRY_bombasTANQUE_ID: TIntegerField;
+    QRY_tanques: TFDQuery;
+    QRY_tanquesTANQUE_ID: TIntegerField;
+    QRY_tanquesTANQUE_TIPO_COMBUSTIVEL: TStringField;
   private
     { Private declarations }
   public
