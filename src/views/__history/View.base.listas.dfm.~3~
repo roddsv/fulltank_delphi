@@ -1,0 +1,19 @@
+inherited ViewBaseListas: TViewBaseListas
+  BorderStyle = bsNone
+  Caption = 'ViewBaseListas'
+  ClientHeight = 480
+  ClientWidth = 640
+  Position = poMainFormCenter
+  TextHeight = 15
+  object topPanel: TPanel
+    Left = 0
+    Top = 0
+    Width = 640
+    Height = 41
+    Align = alTop
+    TabOrder = 0
+    ExplicitLeft = 360
+    ExplicitTop = 248
+    ExplicitWidth = 185
+  end
+end

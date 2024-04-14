@@ -1,0 +1,8 @@
+inherited ViewBaseListas: TViewBaseListas
+  BorderStyle = bsNone
+  Caption = 'ViewBaseListas'
+  ClientHeight = 480
+  ClientWidth = 640
+  Position = poMainFormCenter
+  TextHeight = 15
+end

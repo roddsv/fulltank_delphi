@@ -1,0 +1,28 @@
+unit View.base.listas;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, View.base, Vcl.ExtCtrls;
+
+type
+  TViewBaseListas = class(TViewBase)
+    topPanel: TPanel;
+    footerPanel: TPanel;
+    iconPanel: TPanel;
+    Image1: TImage;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  ViewBaseListas: TViewBaseListas;
+
+implementation
+
+{$R *.dfm}
+
+end.

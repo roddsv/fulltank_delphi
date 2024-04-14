@@ -1,0 +1,36 @@
+unit View.base.listas;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, View.base, Vcl.ExtCtrls, Vcl.Buttons;
+
+type
+  TViewBaseListas = class(TViewBase)
+    topPanel: TPanel;
+    footerPanel: TPanel;
+    closePanel: TPanel;
+    iconImage: TImage;
+    closeButton: TSpeedButton;
+    procedure closeButtonClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  ViewBaseListas: TViewBaseListas;
+
+implementation
+
+{$R *.dfm}
+
+procedure TViewBaseListas.closeButtonClick(Sender: TObject);
+begin
+  inherited;
+  Self.Close;
+end;
+
+end.
