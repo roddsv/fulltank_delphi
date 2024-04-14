@@ -1,0 +1,25 @@
+unit DBService.consultas;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, DBService.connection;
+
+type
+  TDBServiceConsultas = class(TDataModule)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DBServiceConsultas: TDBServiceConsultas;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.

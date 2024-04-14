@@ -1,0 +1,11 @@
+object DBServiceConsultas: TDBServiceConsultas
+  Height = 750
+  Width = 1000
+  PixelsPerInch = 120
+  object QRY_abastecimentos: TFDQuery
+    SQL.Strings = (
+      'SELECT * FROM ABASTECIMENTO;')
+    Left = 160
+    Top = 160
+  end
+end

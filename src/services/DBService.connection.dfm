@@ -15,16 +15,16 @@ object ServiceDBConn: TServiceDBConn
       'DriverID=FB')
     Connected = True
     LoginPrompt = False
-    Left = 320
-    Top = 192
+    Left = 104
+    Top = 112
   end
   object WaitCursor: TFDGUIxWaitCursor
     Provider = 'Forms'
-    Left = 728
-    Top = 152
+    Left = 232
+    Top = 40
   end
   object FBDriverLink: TFDPhysFBDriverLink
-    Left = 736
-    Top = 256
+    Left = 240
+    Top = 176
   end
 end
