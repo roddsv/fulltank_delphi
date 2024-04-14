@@ -3,7 +3,7 @@ object ServiceDBConn: TServiceDBConn
   Height = 750
   Width = 1000
   PixelsPerInch = 120
-  object FirebaseFDConn: TFDConnection
+  object FirebirdFDConn: TFDConnection
     Params.Strings = (
       'Database=D:\meus projetos\Delphi\FullTank\FULL_TANK.FDB'
       'User_Name=SYSDBA'

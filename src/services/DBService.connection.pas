@@ -12,7 +12,7 @@ uses
 
 type
   TServiceDBConn = class(TDataModule)
-    FirebaseFDConn: TFDConnection;
+    FirebirdFDConn: TFDConnection;
     WaitCursor: TFDGUIxWaitCursor;
     FBDriverLink: TFDPhysFBDriverLink;
     procedure DataModuleCreate(Sender: TObject);
@@ -43,7 +43,7 @@ var
 
 begin
   try
-    FirebaseFDConn.Connected := False;
+    FirebirdFDConn.Connected := False;
 
     LPath := ExtractFileDir(ParamStr(0)) + '\Login.ini';
 
@@ -56,13 +56,13 @@ begin
     LUsername := 'SYSDBA';
     LPassword := 'masterkey';
 
-    FirebaseFDConn.Params.Values['DATABASE'] := LDatabase;
-    FirebaseFDConn.Params.Values['Username'] := LUsername;
-    FirebaseFDConn.Params.Values['Password'] := LPassword;
-    FirebaseFDConn.Params.Values['Server'] := LServer;
-    FirebaseFDConn.Params.Values['Port'] := LPort.toString;
+    FirebirdFDConn.Params.Values['DATABASE'] := LDatabase;
+    FirebirdFDConn.Params.Values['Username'] := LUsername;
+    FirebirdFDConn.Params.Values['Password'] := LPassword;
+    FirebirdFDConn.Params.Values['Server'] := LServer;
+    FirebirdFDConn.Params.Values['Port'] := LPort.toString;
 
-    FirebaseFDConn.Connected := True;
+    FirebirdFDConn.Connected := True;
 
   finally
 
