@@ -12,7 +12,7 @@ uses
   Vcl.Controls,
   Vcl.Forms,
   Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Imaging.pngimage, Vcl.Buttons,
-  System.Actions, Vcl.ActnList, System.ImageList, Vcl.ImgList;
+  System.Actions, Vcl.ActnList, System.ImageList, Vcl.ImgList, View.abastecimentos;
 
 type
   TViewPrincipal = class(TForm)
@@ -60,8 +60,16 @@ implementation
 {$R *.dfm}
 
 procedure TViewPrincipal.btnAbastecimentosClick(Sender: TObject);
+var
+  MyClass: TComponent;
 begin
   GetLineMenu(Sender);
+  ViewAbastecimentos := TViewAbastecimentos.Create(Self);
+  try
+    ViewAbastecimentos.ShowModal;
+  finally
+    FreeAndNil(ViewAbastecimentos);
+  end;
 end;
 
 procedure TViewPrincipal.btnBombasETanquesClick(Sender: TObject);

@@ -24,7 +24,7 @@ inherited ViewBaseListas: TViewBaseListas
       Cursor = crHandPoint
       Align = alClient
       Caption = 'titleLabel'
-      Color = clBlack
+      Color = 1495548
       Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
       Font.Height = -23
@@ -33,8 +33,6 @@ inherited ViewBaseListas: TViewBaseListas
       ParentColor = False
       ParentFont = False
       OnMouseDown = topPanelMouseDown
-      ExplicitLeft = 37
-      ExplicitTop = 1
       ExplicitWidth = 96
       ExplicitHeight = 28
     end
@@ -47,7 +45,6 @@ inherited ViewBaseListas: TViewBaseListas
       Align = alRight
       BevelOuter = bvNone
       TabOrder = 0
-      ExplicitLeft = 1
       object closeButton: TSpeedButton
         Left = 0
         Top = 0
@@ -2194,15 +2191,143 @@ inherited ViewBaseListas: TViewBaseListas
   end
   object footerPanel: TPanel
     Left = 0
-    Top = 445
+    Top = 440
     Width = 640
-    Height = 35
+    Height = 40
     Align = alBottom
     Color = 1495548
     ParentBackground = False
     TabOrder = 1
-    ExplicitLeft = 1
-    ExplicitTop = 1
-    ExplicitWidth = 638
+    object btnNovo: TSpeedButton
+      AlignWithMargins = True
+      Left = 312
+      Top = 4
+      Width = 60
+      Height = 32
+      Cursor = crHandPoint
+      Align = alRight
+      GroupIndex = 1
+      Down = True
+      Caption = 'Novo'
+      Flat = True
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -20
+      Font.Name = 'Segoe UI Semibold'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ExplicitLeft = 296
+    end
+    object btnEditar: TSpeedButton
+      AlignWithMargins = True
+      Left = 378
+      Top = 4
+      Width = 60
+      Height = 32
+      Cursor = crHandPoint
+      Align = alRight
+      GroupIndex = 1
+      Caption = 'Editar'
+      Flat = True
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -20
+      Font.Name = 'Segoe UI Semibold'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ExplicitLeft = 362
+    end
+    object btnCancelar: TSpeedButton
+      AlignWithMargins = True
+      Left = 444
+      Top = 4
+      Width = 60
+      Height = 32
+      Cursor = crHandPoint
+      Align = alRight
+      GroupIndex = 1
+      Caption = 'Cancelar'
+      Flat = True
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -20
+      Font.Name = 'Segoe UI Semibold'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ExplicitLeft = 428
+    end
+    object btnSalvar: TSpeedButton
+      AlignWithMargins = True
+      Left = 510
+      Top = 4
+      Width = 60
+      Height = 32
+      Cursor = crHandPoint
+      Align = alRight
+      GroupIndex = 1
+      Caption = 'Salvar'
+      Flat = True
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -20
+      Font.Name = 'Segoe UI Semibold'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ExplicitLeft = 494
+    end
+    object btnExcluir: TSpeedButton
+      AlignWithMargins = True
+      Left = 576
+      Top = 4
+      Width = 60
+      Height = 32
+      Cursor = crHandPoint
+      Align = alRight
+      GroupIndex = 1
+      Caption = 'Excluir'
+      Flat = True
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -20
+      Font.Name = 'Segoe UI Semibold'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ExplicitLeft = 560
+    end
+  end
+  object backLinePanel: TPanel
+    Left = 0
+    Top = 35
+    Width = 640
+    Height = 405
+    Align = alClient
+    BevelOuter = bvNone
+    Color = 1495548
+    ParentBackground = False
+    TabOrder = 2
+    object CardPanel_Listas: TCardPanel
+      AlignWithMargins = True
+      Left = 1
+      Top = 0
+      Width = 638
+      Height = 405
+      Margins.Left = 1
+      Margins.Top = 0
+      Margins.Right = 1
+      Margins.Bottom = 0
+      Align = alClient
+      ActiveCard = card_cadastro
+      BevelOuter = bvNone
+      TabOrder = 0
+      object card_cadastro: TCard
+        Left = 0
+        Top = 0
+        Width = 638
+        Height = 405
+        Caption = 'card_cadastro'
+        CardIndex = 0
+        TabOrder = 0
+      end
+    end
   end
 end

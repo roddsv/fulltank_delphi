@@ -3,6 +3,7 @@ object DBServiceConsultas: TDBServiceConsultas
   Width = 1000
   PixelsPerInch = 120
   object QRY_abastecimentos: TFDQuery
+    Active = True
     Connection = ServiceDBConn.FirebirdFDConn
     SQL.Strings = (
       'SELECT * FROM ABASTECIMENTO;')
@@ -47,6 +48,7 @@ object DBServiceConsultas: TDBServiceConsultas
     end
   end
   object QRY_bombas: TFDQuery
+    Active = True
     Connection = ServiceDBConn.FirebirdFDConn
     SQL.Strings = (
       'SELECT * FROM BOMBA;')
@@ -70,6 +72,7 @@ object DBServiceConsultas: TDBServiceConsultas
     end
   end
   object QRY_tanques: TFDQuery
+    Active = True
     Connection = ServiceDBConn.FirebirdFDConn
     SQL.Strings = (
       'SELECT * FROM TANQUE;')

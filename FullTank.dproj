@@ -112,6 +112,23 @@
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
+        <DCCReference Include="src\services\DBService.consultas.pas">
+            <Form>DBServiceConsultas</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="src\views\View.base.pas">
+            <Form>ViewBase</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="src\views\View.base.listas.pas">
+            <Form>ViewBaseListas</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="src\views\View.abastecimentos.pas">
+            <Form>ViewAbastecimentos</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -135,6 +152,7 @@
                 <Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dcloffice2k280.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dclofficexp280.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="D:\Fortes Report\fortesreport\Binary\LibD28\dclfrce.bpl">File D:\Fortes Report\fortesreport\Binary\LibD28\dclfrce.bpl not found</Excluded_Packages>
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="4">

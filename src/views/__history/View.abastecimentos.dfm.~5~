@@ -1,0 +1,8 @@
+inherited ViewBaseListas1: TViewBaseListas1
+  Caption = 'ViewBaseListas1'
+  TextHeight = 15
+  object dsData: TDataSource
+    Left = 225
+    Top = 99
+  end
+end

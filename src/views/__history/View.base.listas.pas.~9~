@@ -1,0 +1,62 @@
+unit View.base.listas;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, View.base, Vcl.ExtCtrls, Vcl.Buttons,
+  Vcl.StdCtrls, Vcl.WinXPanels;
+
+type
+  TViewBaseListas = class(TViewBase)
+    topPanel: TPanel;
+    footerPanel: TPanel;
+    closePanel: TPanel;
+    iconImage: TImage;
+    closeButton: TSpeedButton;
+    titleLabel: TLabel;
+    iconPanel: TPanel;
+    btnNovo: TSpeedButton;
+    btnEditar: TSpeedButton;
+    btnCancelar: TSpeedButton;
+    btnSalvar: TSpeedButton;
+    btnExcluir: TSpeedButton;
+    backLinePanel: TPanel;
+    CardPanel_Listas: TCardPanel;
+    card_pesquisa: TCard;
+    card_cadastro: TCard;
+    procedure closeButtonClick(Sender: TObject);
+    procedure topPanelMouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Integer);
+    procedure FormShow(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  ViewBaseListas: TViewBaseListas;
+
+implementation
+
+{$R *.dfm}
+
+procedure TViewBaseListas.closeButtonClick(Sender: TObject);
+begin
+  inherited;
+  Self.Close;
+end;
+
+procedure TViewBaseListas.topPanelMouseDown(Sender: TObject;
+  Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
+  const
+  sc_DragMove = $f012;
+  begin
+  inherited;
+  ReleaseCapture;
+  Perform(wm_SysCommand, sc_Dragmove, 0);
+
+end;
+
+end.

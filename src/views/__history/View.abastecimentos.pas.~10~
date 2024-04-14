@@ -1,0 +1,37 @@
+unit View.abastecimentos;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, View.base.listas, Vcl.WinXPanels,
+  Vcl.ExtCtrls, Vcl.Buttons, Vcl.StdCtrls, DBService.consultas, Data.DB,
+  Vcl.Grids, Vcl.DBGrids;
+
+type
+  TViewAbastecimentos = class(TViewBaseListas)
+    dsData: TDataSource;
+    DBGrid_Abastecimentos: TDBGrid;
+  private
+    { Private declarations }
+  public
+    procedure GetAbastecimentos;
+  end;
+
+var
+  ViewAbastecimentos: TViewAbastecimentos;
+
+implementation
+
+{$R *.dfm}
+
+{ TViewAbastecimentos }
+
+procedure TViewAbastecimentos.GetAbastecimentos;
+begin
+  DBServiceConsultas.QRY_abastecimentos.Close;
+  DBServiceConsultas.QRY_abastecimentos.SQL.Clear;
+  DBServiceConsultas.QRY_abastecimentos.SQL.Add('SELECT * FROM ABASTECIMENTO');
+end;
+
+end.
