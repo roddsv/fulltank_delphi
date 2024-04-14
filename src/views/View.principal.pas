@@ -37,13 +37,7 @@ type
     btnBombasETanques: TSpeedButton;
     btnConfiguracoes: TSpeedButton;
     userLicenseText: TLabel;
-    Image1: TImage;
-    ActionList_main: TActionList;
-    act_abastecimentos: TAction;
-    act_bombas_e_tanques: TAction;
-    act_relatorios: TAction;
-    act_configuracoes: TAction;
-    ImageList_36: TImageList;
+    contentImage: TImage;
     procedure closeButtonClick(Sender: TObject);
     procedure btnAbastecimentosClick(Sender : TObject);
     procedure btnBombasETanquesClick(Sender : TObject);
