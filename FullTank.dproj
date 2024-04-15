@@ -129,6 +129,10 @@
             <Form>ViewAbastecimentos</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="src\views\View.bombas.pas">
+            <Form>ViewBombasETanques</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

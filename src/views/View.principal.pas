@@ -12,7 +12,7 @@ uses
   Vcl.Controls,
   Vcl.Forms,
   Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Imaging.pngimage, Vcl.Buttons,
-  System.Actions, Vcl.ActnList, System.ImageList, Vcl.ImgList, View.abastecimentos;
+  System.Actions, Vcl.ActnList, System.ImageList, Vcl.ImgList, View.abastecimentos, View.bombas;
 
 type
   TViewPrincipal = class(TForm)
@@ -75,6 +75,12 @@ end;
 procedure TViewPrincipal.btnBombasETanquesClick(Sender: TObject);
 begin
   GetLineMenu(Sender);
+  ViewBombasETanques := TViewBombasETanques.Create(Self);
+  try
+    ViewBombasETanques.ShowModal;
+  finally
+    FreeAndNil(ViewBombasETanques);
+  end;
 end;
 
 procedure TViewPrincipal.btnRelatoriosClick(Sender: TObject);

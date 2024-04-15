@@ -1,4 +1,5 @@
 inherited ViewAbastecimentos: TViewAbastecimentos
+  AlignWithMargins = True
   Align = alClient
   Caption = 'ViewAbastecimentos'
   TextHeight = 15
@@ -7,30 +8,33 @@ inherited ViewAbastecimentos: TViewAbastecimentos
       Width = 561
       Height = 27
       Caption = 'Abastecimentos'
-      ExplicitLeft = 37
-      ExplicitTop = 2
-      ExplicitWidth = 561
-      ExplicitHeight = 27
+      ExplicitWidth = 168
     end
-  end
-  inherited footerPanel: TPanel
-    ExplicitTop = 443
   end
   inherited backLinePanel: TPanel
     inherited CardPanel_Listas: TCardPanel
       inherited card_cadastro: TCard
+        AlignWithMargins = True
+        Left = 3
+        Top = 3
+        Width = 632
+        Height = 399
+        ExplicitLeft = 3
+        ExplicitTop = 3
+        ExplicitWidth = 632
+        ExplicitHeight = 399
         object DBGrid_Abastecimentos: TDBGrid
           AlignWithMargins = True
           Left = 5
           Top = 3
-          Width = 628
-          Height = 397
+          Width = 622
+          Height = 391
           Margins.Left = 5
           Margins.Right = 5
           Margins.Bottom = 5
           Align = alClient
           BorderStyle = bsNone
-          DataSource = dsData
+          DataSource = dsAbastecimentos
           Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
           TabOrder = 0
           TitleFont.Charset = DEFAULT_CHARSET
@@ -40,12 +44,14 @@ inherited ViewAbastecimentos: TViewAbastecimentos
           TitleFont.Style = []
           Columns = <
             item
+              Alignment = taLeftJustify
               Expanded = False
               FieldName = 'ABASTECIMENTO_ID'
               Title.Caption = 'ID do Abastecimento'
               Visible = True
             end
             item
+              Alignment = taLeftJustify
               Expanded = False
               FieldName = 'BOMBA_ID'
               Title.Caption = 'Id da Bomba'
@@ -58,6 +64,7 @@ inherited ViewAbastecimentos: TViewAbastecimentos
               Visible = True
             end
             item
+              Alignment = taLeftJustify
               Expanded = False
               FieldName = 'QUANTIDADE_LITROS'
               Title.Caption = 'Qtde. de Litros'
@@ -65,6 +72,7 @@ inherited ViewAbastecimentos: TViewAbastecimentos
               Visible = True
             end
             item
+              Alignment = taLeftJustify
               Expanded = False
               FieldName = 'VALOR_ABASTECIDO'
               Title.Caption = 'Valor'
@@ -72,6 +80,7 @@ inherited ViewAbastecimentos: TViewAbastecimentos
               Visible = True
             end
             item
+              Alignment = taLeftJustify
               Expanded = False
               FieldName = 'IMPOSTO'
               Title.Caption = 'Impostos Totais'
@@ -81,7 +90,7 @@ inherited ViewAbastecimentos: TViewAbastecimentos
       end
     end
   end
-  object dsData: TDataSource
+  object dsAbastecimentos: TDataSource
     DataSet = DBServiceConsultas.QRY_abastecimentos
     Left = 225
     Top = 99

@@ -1,0 +1,16 @@
+inherited ViewBaseListas1: TViewBaseListas1
+  Caption = 'ViewBombasETanques'
+  TextHeight = 15
+  inherited topPanel: TPanel
+    inherited titleLabel: TLabel
+      Width = 561
+      Height = 27
+      Caption = 'Bombas e Tanques'
+      ExplicitWidth = 197
+    end
+  end
+  object dsBombasETanques: TDataSource
+    Left = 216
+    Top = 171
+  end
+end

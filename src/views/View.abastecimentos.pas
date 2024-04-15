@@ -10,7 +10,7 @@ uses
 
 type
   TViewAbastecimentos = class(TViewBaseListas)
-    dsData: TDataSource;
+    dsAbastecimentos: TDataSource;
     DBGrid_Abastecimentos: TDBGrid;
   private
     { Private declarations }
