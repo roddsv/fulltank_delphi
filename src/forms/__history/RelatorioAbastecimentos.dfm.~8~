@@ -1,0 +1,185 @@
+object frmRelAbastecimentos: TfrmRelAbastecimentos
+  Left = 0
+  Top = 0
+  Caption = 'frmRelAbastecimentos'
+  ClientHeight = 561
+  ClientWidth = 948
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object RelAbastecimentos: TRLReport
+    Left = 0
+    Top = 0
+    Width = 992
+    Height = 1403
+    DataSource = dsAbastecimentos
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -17
+    Font.Name = 'Arial'
+    Font.Style = []
+    Title = 'Relat'#243'rio de Abastecimentos'
+    object Abastecimentos: TRLBand
+      Left = 47
+      Top = 47
+      Width = 898
+      Height = 58
+      BandType = btTitle
+      object RLName: TRLLabel
+        Left = 162
+        Top = 11
+        Width = 304
+        Height = 28
+        Alignment = taCenter
+        Caption = 'Relat'#243'rio de Abastecimentos'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -23
+        Font.Name = 'Roboto'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object RLDateTimeGeneration: TRLSystemInfo
+        Left = 177
+        Top = 36
+        Width = 48
+        Height = 19
+        Info = itNow
+        Text = ''
+      end
+      object RLFixedTextGeneration: TRLLabel
+        Left = 4
+        Top = 36
+        Width = 152
+        Height = 19
+        Caption = 'Relat'#243'rio gerado em'
+      end
+    end
+    object RLDadosDeAbastecimento: TRLBand
+      Left = 47
+      Top = 105
+      Width = 898
+      Height = 136
+      object RLIdAbastecimento: TRLLabel
+        Left = 12
+        Top = 44
+        Width = 154
+        Height = 19
+        Caption = 'Id do Abastecimento'
+      end
+      object RLNumeroDaBomba: TRLLabel
+        Left = 177
+        Top = 45
+        Width = 98
+        Height = 19
+        Caption = 'Id da Bomba'
+      end
+      object RLQuantidade: TRLLabel
+        Left = 484
+        Top = 45
+        Width = 88
+        Height = 19
+        Caption = 'Quantidade'
+      end
+      object RLDataDoAbastecimento: TRLLabel
+        Left = 292
+        Top = 45
+        Width = 174
+        Height = 19
+        Caption = 'Data do Abastecimento'
+      end
+      object RLValorFinal: TRLLabel
+        Left = 682
+        Top = 45
+        Width = 43
+        Height = 19
+        Caption = 'Valor'
+      end
+      object RLIdAbastecimentoValue: TRLDBText
+        Left = 12
+        Top = 69
+        Width = 115
+        Height = 19
+        DataField = 'ABASTECIMENTO_ID'
+        DataSource = dsAbastecimentos
+        Text = ''
+      end
+      object RLIdBombaValue: TRLDBText
+        Left = 177
+        Top = 70
+        Width = 67
+        Height = 19
+        DataField = 'BOMBA_ID'
+        DataSource = dsAbastecimentos
+        Text = ''
+      end
+      object RLDataAbastecimentoValue: TRLDBText
+        Left = 292
+        Top = 70
+        Width = 136
+        Height = 19
+        DataField = 'DATA_ABASTECIMENTO'
+        DataSource = dsAbastecimentos
+        Text = ''
+      end
+      object RLQtdeAbastecidaValue: TRLDBText
+        Left = 484
+        Top = 70
+        Width = 61
+        Height = 19
+        DataField = 'QUANTIDADE_LITROS'
+        DataSource = dsAbastecimentos
+        Text = ''
+      end
+      object RLImposto: TRLLabel
+        Left = 590
+        Top = 45
+        Width = 62
+        Height = 19
+        Caption = 'Imposto'
+      end
+      object RLImpostoValue: TRLDBText
+        Left = 590
+        Top = 70
+        Width = 78
+        Height = 19
+        DataField = 'IMPOSTO'
+        DataSource = dsAbastecimentos
+        Text = ''
+      end
+      object RLDBText1: TRLDBText
+        Left = 682
+        Top = 70
+        Width = 113
+        Height = 19
+        DataField = 'VALOR_ABASTECIDO'
+        DataSource = dsAbastecimentos
+        Text = ''
+      end
+    end
+    object RLRodape: TRLBand
+      Left = 47
+      Top = 241
+      Width = 898
+      Height = 88
+      BandType = btFooter
+      object RLNumeroDePaginaInfo: TRLSystemInfo
+        Left = 744
+        Top = 56
+        Width = 112
+        Height = 19
+        Info = itPageNumber
+        Text = ''
+      end
+    end
+  end
+  object dsAbastecimentos: TDataSource
+    DataSet = DBServiceConsultas.QRY_abastecimentos
+    Left = 168
+    Top = 328
+  end
+end

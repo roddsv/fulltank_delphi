@@ -8,7 +8,8 @@ uses
   View.base in 'src\views\View.base.pas' {ViewBase},
   View.base.listas in 'src\views\View.base.listas.pas' {ViewBaseListas},
   View.abastecimentos in 'src\views\View.abastecimentos.pas' {ViewAbastecimentos},
-  View.bombas in 'src\views\View.bombas.pas' {ViewBombasETanques};
+  View.bombas in 'src\views\View.bombas.pas' {ViewBombasETanques},
+  RelatorioAbastecimentos in 'src\forms\RelatorioAbastecimentos.pas' {frmRelAbastecimentos};
 
 {$R *.res}
 
@@ -21,5 +22,6 @@ begin
   Application.CreateForm(TViewBaseListas, ViewBaseListas);
   Application.CreateForm(TViewAbastecimentos, ViewAbastecimentos);
   Application.CreateForm(TViewBombasETanques, ViewBombasETanques);
+  Application.CreateForm(TfrmRelAbastecimentos, frmRelAbastecimentos);
   Application.Run;
 end.

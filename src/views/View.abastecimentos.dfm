@@ -44,14 +44,12 @@ inherited ViewAbastecimentos: TViewAbastecimentos
           TitleFont.Style = []
           Columns = <
             item
-              Alignment = taLeftJustify
               Expanded = False
               FieldName = 'ABASTECIMENTO_ID'
               Title.Caption = 'ID do Abastecimento'
               Visible = True
             end
             item
-              Alignment = taLeftJustify
               Expanded = False
               FieldName = 'BOMBA_ID'
               Title.Caption = 'Id da Bomba'
@@ -64,7 +62,6 @@ inherited ViewAbastecimentos: TViewAbastecimentos
               Visible = True
             end
             item
-              Alignment = taLeftJustify
               Expanded = False
               FieldName = 'QUANTIDADE_LITROS'
               Title.Caption = 'Qtde. de Litros'
@@ -72,7 +69,6 @@ inherited ViewAbastecimentos: TViewAbastecimentos
               Visible = True
             end
             item
-              Alignment = taLeftJustify
               Expanded = False
               FieldName = 'VALOR_ABASTECIDO'
               Title.Caption = 'Valor'
@@ -80,7 +76,6 @@ inherited ViewAbastecimentos: TViewAbastecimentos
               Visible = True
             end
             item
-              Alignment = taLeftJustify
               Expanded = False
               FieldName = 'IMPOSTO'
               Title.Caption = 'Impostos Totais'
@@ -92,7 +87,7 @@ inherited ViewAbastecimentos: TViewAbastecimentos
   end
   object dsAbastecimentos: TDataSource
     DataSet = DBServiceConsultas.QRY_abastecimentos
-    Left = 225
-    Top = 99
+    Left = 188
+    Top = 110
   end
 end

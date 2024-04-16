@@ -12,7 +12,8 @@ uses
   Vcl.Controls,
   Vcl.Forms,
   Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Imaging.pngimage, Vcl.Buttons,
-  System.Actions, Vcl.ActnList, System.ImageList, Vcl.ImgList, View.abastecimentos, View.bombas;
+  System.Actions, Vcl.ActnList, System.ImageList, Vcl.ImgList, View.abastecimentos, View.bombas,
+  RelatorioAbastecimentos;
 
 type
   TViewPrincipal = class(TForm)
@@ -86,6 +87,7 @@ end;
 procedure TViewPrincipal.btnRelatoriosClick(Sender: TObject);
 begin
   GetLineMenu(Sender);
+  frmRelAbastecimentos.RelAbastecimentos.Preview();
 end;
 
 procedure TViewPrincipal.btnConfiguracoesClick(Sender: TObject);

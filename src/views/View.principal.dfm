@@ -2752,6 +2752,7 @@ object ViewPrincipal: TViewPrincipal
           0000000000000000000000000000000000000000000000000000000000000000
           0000000000000000000000000000000000000000000000000000}
         ParentFont = False
+        OnClick = btnRelatoriosClick
         ExplicitLeft = 0
       end
       object btnBombasETanques: TSpeedButton
