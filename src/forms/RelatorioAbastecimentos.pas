@@ -26,7 +26,7 @@ type
     RLQtdeAbastecidaValue: TRLDBText;
     RLImposto: TRLLabel;
     RLImpostoValue: TRLDBText;
-    RLDBText1: TRLDBText;
+    RLValorDoAbastecimentoValue: TRLDBText;
     RLRodape: TRLBand;
     RLNumeroDePaginaInfo: TRLSystemInfo;
   private

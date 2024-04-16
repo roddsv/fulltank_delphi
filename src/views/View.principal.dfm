@@ -2140,12 +2140,18 @@ object ViewPrincipal: TViewPrincipal
     ParentBackground = False
     TabOrder = 0
     object closeButton: TButton
-      Left = 883
+      Left = 912
       Top = 0
-      Width = 75
+      Width = 46
       Height = 60
       Align = alRight
-      Caption = 'Close'
+      Caption = 'X'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -27
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
       TabOrder = 0
       OnClick = closeButtonClick
     end
@@ -2327,15 +2333,16 @@ object ViewPrincipal: TViewPrincipal
     object descriptionPanel: TPanel
       Left = 210
       Top = 0
-      Width = 673
+      Width = 702
       Height = 60
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 2
+      ExplicitWidth = 748
       object projectDescription: TLabel
         Left = 0
         Top = 0
-        Width = 673
+        Width = 702
         Height = 60
         Align = alClient
         Alignment = taCenter
@@ -2347,8 +2354,9 @@ object ViewPrincipal: TViewPrincipal
         Font.Style = [fsBold]
         ParentFont = False
         Layout = tlCenter
-        ExplicitWidth = 551
-        ExplicitHeight = 20
+        ExplicitLeft = 3
+        ExplicitTop = -3
+        ExplicitWidth = 748
       end
     end
   end

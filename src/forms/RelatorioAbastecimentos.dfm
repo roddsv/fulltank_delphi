@@ -151,10 +151,10 @@ object frmRelAbastecimentos: TfrmRelAbastecimentos
         DataSource = dsAbastecimentos
         Text = ''
       end
-      object RLDBText1: TRLDBText
+      object RLValorDoAbastecimentoValue: TRLDBText
         Left = 658
         Top = 70
-        Width = 103
+        Width = 173
         Height = 19
         DataField = 'VALOR_ABASTECIDO'
         DataSource = dsAbastecimentos
